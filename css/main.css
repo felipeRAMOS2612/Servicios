@@ -1,0 +1,72 @@
+body{   
+    font-family: 'Poppins';
+    padding: 0;
+    margin: 0;
+    background-color: #414242;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.header{
+    color: white;
+    min-height: 600px;
+    max-height: 800px;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+}
+
+
+.nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__items{
+    list-style: none;
+
+}
+
+.nav__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__links{
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__img{
+    display: block;
+    width: 30px;
+}
+
+.nav__close{
+    display: none;
+}
+
+.img__header{
+    background-image: url('../images/Jardin.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+}
