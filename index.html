@@ -16,7 +16,7 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
         <div class="container-fluid px-4">
-          <a class="navbar-brand" href="#">Servicios</a>
+          <a class="navbar-brand" href="">Servicios</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -44,44 +44,10 @@
             </div>
         </div>
     </nav>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true" aria-labelledby="exampleModalLabel">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Contactanos</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="icon-container2 d-flex mb-2 mb-lg-0  justify-content-center">
-                <div class="text-center p-3">
-                    <i href="" class="img-thumbnail fab fa-whatsapp fa-2x"
-                        style="color:  #25D366;background-color: #cef5dc; cursor: pointer;"></i>
-                    <p><small>Whatsapp</small></p>
-                </div>
-                <div class="text-center p-3" role="button">
-                    <i class="img-thumbnail fab fa-facebook-messenger fa-2x"
-                        style="color: #3b5998;background-color: #eceff5;"></i>
-                        <p><small>Messenger</small></p>
-                </div>
-                <div class="text-center p-3" role="button">
-                    <i class="img-thumbnail fab fa-telegram fa-2x"
-                        style="color:  #4c6ef5;background-color: aliceblue"></i>
-                        <p><small>Telegram</small></p>
-                </div>
-                <div class="text-center p-3" role="button">
-                  <i class="img-thumbnail fa-brands fa-instagram fa-2x"
-                  style="color: #ffffff;background-color: #ff00d4;"></i>
-                        <p><small>Instagram</small></p>
-                </div>
-            </div>
-            </div>
-          </div>
-        </div>
-    </div>
+    
     <div id="carouselExampleCaptions" class="carousel slide py-4" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
+          <div class="carousel-item active">
                 <img src="./images/carrousel/carrousel_4.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block" style="background-color: rgba(18, 18, 18, 0.522);">
                 <h5>Servicio de mantención a calderas industriales</h5>
@@ -95,7 +61,7 @@
               <p>Limpieza, instalación y mantención de estufas lentas, a leña, pellet y laser.</p>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item">
             <img src="./images/carrousel/carrousel_1.jpeg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block" style="background-color: rgba(18, 18, 18, 0.522);">
                 <h5>Instalacion y venta de pasto alfombra</h5>
@@ -206,8 +172,8 @@
 	</div>
     <h2 class="text-center">Información</h2>
     <hr width='45%' style="margin: 15px auto;">
-    <div class="justify-content-center d-flex py-3">
-        <div class="card border-primary mb-3 col-sm-10 col-lg-3">
+    <div class="justify-content-center d-flex">
+        <div class="card border-primary mb-3 col-md-6 ">
             <div class="card-header fs-2">Quien realiza los trabajos</div>
                 <div class="card-body">
                     <h3 class="card-title">Cristian Rodrigo Acum Acum</h3>
@@ -221,28 +187,82 @@
 
 
 
-    <footer class="bg-dark text-center text-lg-start">
-        <!-- Grid container -->
-        <div class="container p-4">
-          <!--Grid row-->
-          <div class="row">
-            <!--Grid column-->
-            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-              <h5 class="text-uppercase text-white">Footer text</h5>
-      
-              <p class="text-white">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-                aliquam voluptatem veniam, est atque cumque eum delectus sint!
-              </p>
-            </div>
+    <footer class="bg-dark text-lg-start">
+        <!--Grid row-->
+          <!--Grid column-->
+          <div class="p-2">
+            <h5 class="text-uppercase text-white text-center">Servicios</h5>
+            <hr width="80%" style="color: white; margin: auto;">
+            <p class="text-white">
+              Lorem ipsum
+            </p>
+          </div>
+      </div>
+    
+      <div class="text-center text-white" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+      </div>
+    </footer>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Contactanos</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="post" action="enviar2.php">
+              <h5>Todos los campos son obligatorios</h5>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="inputEmail">Correo</label>
+                  <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Correo">
+                </div>
+                <div class="form-group">
+                  <label for="inputName">Nombre y Apellido</label>
+                  <input type="text" name="nombre" class="form-control" id="inputName" placeholder="Nombre y apellido">
+                </div>
+                <div class="form-group">
+                  <label for="inputPhone">Numero de telefono</label>
+                  <input type="tel" name="telefono" class="form-control" id="inputPhone" placeholder="Correo">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputMessage">Mensaje</label>
+                <input type="text" name="mensaje" class="form-control" id="inputMessage">
+              </div>
+              <div class="justify-content-center d-flex form-group">
+                <button class="btn btn-primary my-2" type="submit">Enviar</button>
+              </div>
+            </form>
+            <div class="icon-container2 d-flex mb-2 mb-lg-0  justify-content-center">
+              <div class="text-center p-3">
+                  <i href="" class="img-thumbnail fab fa-whatsapp fa-2x"
+                      style="color:  #25D366;background-color: #cef5dc; cursor: pointer;"></i>
+                  <p><small>Whatsapp</small></p>
+              </div>
+              <div class="text-center p-3" role="button">
+                  <i class="img-thumbnail fab fa-facebook-messenger fa-2x"
+                      style="color: #3b5998;background-color: #eceff5;"></i>
+                      <p><small>Messenger</small></p>
+              </div>
+              <div class="text-center p-3" role="button">
+                  <i class="img-thumbnail fab fa-telegram fa-2x"
+                      style="color:  #4c6ef5;background-color: aliceblue"></i>
+                      <p><small>Telegram</small></p>
+              </div>
+              <div class="text-center p-3" role="button">
+                <i class="img-thumbnail fa-brands fa-instagram fa-2x"
+                style="color: #ffffff;background-color: #ff00d4;"></i>
+                      <p><small>Instagram</small></p>
+              </div>
+          </div>
           </div>
         </div>
-      
-        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div>
-      </footer>
+      </div>
+  </div>
 </body>
 </html>
