@@ -6,3 +6,11 @@
 .materiales{
     display: none;
 }
+
+.contenedor-imagenes{
+    display: none;
+}
+
+.contenedor-imagenes.active{
+    display: flex;
+}

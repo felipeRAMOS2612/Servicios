@@ -31,7 +31,7 @@
                             <a class="nav-link active text-center my-3" data-bs-toggle="pill" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link text-center my-3 " href="../Combustiones/trabajos.html">Trabajos</a>
+                            <a class="nav-link text-center my-3 " href="trabajos.html">Trabajos</a>
                         </li>
                         <li class="nav-item px-2">
                             <a class="nav-link text-center my-3" data-bs-toggle="modal" data-bs-target="#exampleModal"  data-bs-whatever="@mdo" type="button">Contacto</a>
@@ -214,20 +214,20 @@
             </button>
           </div>
           <div class="modal-body">
-            <form method="post" action="enviar2.php">
+            <form action="https://formsubmit.co/39b7049417896e861f154da7fab554c3" method="POST" >
               <h5>Todos los campos son obligatorios</h5>
               <div class="form-row">
                 <div class="form-group">
                   <label for="inputEmail">Correo</label>
-                  <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Correo">
+                  <input type="email" name="email" class="form-control" id="inputEmail">
                 </div>
                 <div class="form-group">
                   <label for="inputName">Nombre y Apellido</label>
-                  <input type="text" name="nombre" class="form-control" id="inputName" placeholder="Nombre y apellido">
+                  <input type="text" name="nombre" class="form-control" id="inputName">
                 </div>
                 <div class="form-group">
                   <label for="inputPhone">Numero de telefono</label>
-                  <input type="tel" name="telefono" class="form-control" id="inputPhone" placeholder="Correo">
+                  <input type="tel" name="telefono" class="form-control" id="inputPhone">
                 </div>
               </div>
               <div class="form-group">
@@ -235,8 +235,11 @@
                 <input type="text" name="mensaje" class="form-control" id="inputMessage">
               </div>
               <div class="justify-content-center d-flex form-group">
-                <button class="btn btn-primary my-2" type="submit">Enviar</button>
+                <button class="btn btn-primary my-2" type="submit" data-bs-toggle="agradecimiento">Enviar</button>
               </div>
+
+              <input type="hidden" name="_next" value="https://feliperamos2612.github.io/Servicios/index.html">
+              <input type="hidden" name="_captcha" value="false">
             </form>
             <div class="icon-container2 d-flex mb-2 mb-lg-0  justify-content-center">
               <div class="text-center p-3">
@@ -263,6 +266,10 @@
           </div>
         </div>
       </div>
+  </div>
+
+  <div class="modal fade" id="agradecimiento">
+    <h1>hello</h1>
   </div>
 </body>
 </html>
