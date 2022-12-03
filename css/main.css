@@ -25,6 +25,7 @@
 }
 
 .contenedor-imagen{
+    display: none;
     transition: 0.5s;
 }
 
