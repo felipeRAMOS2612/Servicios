@@ -10,7 +10,7 @@
 .contenedor-imagenes{
     max-height:0;
     opacity: 0;
-    transition: 0.2s;
+    transition: 1s;
 }
 
 .contenedor-imagenes.activo{
