@@ -6,17 +6,16 @@ let categoriaActiva = null;
 categorias.forEach((categoria)=>{
     categoria.addEventListener('click',(e)=>{
         categorias.forEach((element)=>{
-            element.classList.remove('active')
+            element.classList.remove('active');
         })
         e.currentTarget.classList.toggle('active');
         categoriaActiva = categoria.dataset.categoria;
-        console.log(categoriaActiva)
 
         contenedorImagenes.forEach((contenedor)=>{
             if(contenedor.dataset.categoria === categoriaActiva){
-                contenedor.classList.add('active')
+                contenedor.classList.add('activo')
             }else{
-                contenedor.classList.remove('active')
+                contenedor.classList.remove('activo')
             }
         })
     })

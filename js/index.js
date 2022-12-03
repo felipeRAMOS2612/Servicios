@@ -7,10 +7,10 @@ const boton = document.querySelectorAll('.btn');
 boton.forEach((button) =>{
     button.addEventListener('click', (e)=>{
         boton.forEach((elemento)=>{
-            elemento.classList.remove('active');
+            elemento.classList.remove('active-btn');
         });
 
-        e.currentTarget.classList.toggle('active');
+        e.currentTarget.classList.toggle('active-btn');
     })
 })
 
