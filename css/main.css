@@ -1,3 +1,35 @@
+
+
+.background-image{
+    background-image: url('../images/mantencion/caldera.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #151515;
+    
+}
+
+.content{
+    z-index: 10;
+    position: relative;
+}
+
+.background-image::before{
+    content: "";
+  -webkit-filter: blur(0.5px) brightness(0.5);
+  -moz-filter: blur(1px) brightness(0.5);
+  -ms-filter: blur(1px) brightness(0.5);
+  -o-filter: blur(1px) brightness(0.5);
+  filter: blur(1px) brightness(0.5);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: inherit;
+  z-index: 0;
+}
+
 .materiales.activo{
     display: flex !important;
     
@@ -112,4 +144,9 @@
 #button-up:hover{
     transform: scale(1.1);
     border-color: rgb(29, 44, 77, 1)
+}
+
+.footer{
+    z-index: 100;
+    position: relative;
 }
