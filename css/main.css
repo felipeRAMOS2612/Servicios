@@ -16,11 +16,11 @@
 
 .background-image::before{
     content: "";
-  -webkit-filter: blur(0.5px) brightness(0.5);
-  -moz-filter: blur(1px) brightness(0.5);
-  -ms-filter: blur(1px) brightness(0.5);
-  -o-filter: blur(1px) brightness(0.5);
-  filter: blur(1px) brightness(0.5);
+  -webkit-filter: blur(1.5px) brightness(0.4);
+  -moz-filter: blur(1.5px) brightness(0.4);
+  -ms-filter: blur(1.5px) brightness(0.4);
+  -o-filter: blur(1.5px) brightness(0.4);
+  filter: blur(1.5px) brightness(0.4);
   position: fixed;
   left: 0px;
   top: 0px;
@@ -88,8 +88,13 @@
     background-color: #ff8000 !important;
 }
 
+.nav-item a{
+    color: rgba(255, 255, 255, 0.712) !important;
+    transition: 0.2s;
+}
+
 .nav-item a:hover{
-    color: #ffffff !important;
+    color: #fff !important;
     transition: 0.2s;
 }
 
@@ -150,3 +155,25 @@
     z-index: 100;
     position: relative;
 }
+
+.navbar-brand{
+    width: 165px !important; 
+    height: 105px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-brand {
+      width: 110px !important;
+      height: 70px !important;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .carousel-container{
+      width: 95% !important;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      margin: auto;
+    }
+  }
