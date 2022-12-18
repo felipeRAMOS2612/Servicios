@@ -2,6 +2,7 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input')
 
 const regExp = {
+
     nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     telefono: /^\d{9,14}$/,
@@ -58,5 +59,6 @@ formulario.addEventListener('submit', (e)=>{
         document.getElementById('formulario__mensaje').classList.remove('d-none');
         document.getElementById('formulario__mensaje').classList.add('d-flex')
     }
-})
+}
+)
 
