@@ -311,27 +311,33 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="https://formsubmit.co/39b7049417896e861f154da7fab554c3" method="POST" >
+        <form action="https://formsubmit.co/feliperr125@gmail.com" method="POST" id="formulario">
           <div class="form-row">
-            <div class="form-group">
+            <div class="form-group" id="group__Email">
               <label for="inputEmail">Correo</label>
-              <input type="email" name="email" class="form-control" id="inputEmail">
+              <input type="email" name="email" class="form-control correo" id="inputEmail">
+              <p class="input-error rounded p-2 m-1">El correo es incorrecto, porfavor vuelve a escribirlo</p>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="group__Name">
               <label for="inputName">Nombre y Apellido</label>
               <input type="text" name="nombre" class="form-control" id="inputName">
+              <p class="input-error rounded p-2 m-1">El nombre y apellido es muy corto o tiene caracteres invalidos</p>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="group__Tel">
               <label for="inputPhone">Numero de telefono</label>
-              <input type="tel" name="telefono" class="form-control" id="inputPhone">
+              <input type="number" name="telefono" class="form-control" id="inputTel">
+              <p class="input-error rounded p-2 m-1">El numero de telefono es incorrecto</p>
             </div>
           </div>
-          <div class="form-group">
+          <div class="form-group" id="group__Message">
             <label for="inputMessage">Mensaje</label>
-            <input type="text" name="mensaje" class="form-control" id="inputMessage">
+            <input type="text" name="comments" class="form-control" id="inputMessage">
           </div>
           <div class="justify-content-center d-flex form-group">
-            <button class="btn bg-orange my-2 text-white  " type="submit" data-bs-toggle="agradecimiento">Enviar</button>
+            <input class="btn bg-orange my-2 text-white" value="enviar" type="submit"></input>
+          </div>
+          <div class="bg-danger rounded text-white d-none p-3" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
           </div>
 
           <input type="hidden" name="_next" value="https://feliperamos2612.github.io/Servicios/index.html">
@@ -353,5 +359,6 @@
   </div>
   </div>
   <script src="https://feliperamos2612.github.io/Servicios/js/boton.js"></script>
+  <script src="js/validacion.js"></script>
 </body>
 </html>
