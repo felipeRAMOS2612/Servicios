@@ -69,14 +69,9 @@
 }
 
 .btn-orange{
-    background-color: #1d2c4d !important;
+    background-color: #1d2c4d;
     border: 1px solid black;
     color:white;
-}
-
-.btn-orange:hover{
-    transition: 0.3s;
-    background-color: #ff8000 !important;
 }
 
 .title-orange{
@@ -85,8 +80,8 @@
 }
 
 .btn:hover{
-    background-color: rgb(230, 220, 198) !important;
-    color: #151515;
+    color: rgb(230, 220, 198) !important;
+    background-color: #151515 !important;
 }
 
 .nav-item a{
@@ -122,9 +117,10 @@
 }
 
 .active-btn{
-    background-color: #ff8000 !important;
-    color: white !important;
-    border-radius: 15px;
+  background-color: rgb(230, 220, 198) !important;
+  color: #151515 !important;
+  border-radius: 15px;
+  transition: all 0.3s;
 }
 
 .footer{
@@ -185,15 +181,6 @@
     }
   }
 
-  @media only screen and (max-width: 600px) {
-    .carousel-container{
-      width: 100% !important;
-      justify-content: center;
-      text-align: center;
-      display: flex;
-      margin: auto;
-    }
-  }
 
   @keyframes loader {
     0% {

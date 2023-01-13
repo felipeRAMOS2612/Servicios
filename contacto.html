@@ -12,7 +12,7 @@
     $('#loader-wrapper').hide();
     $("form").submit(function(event){
       $('#loader-wrapper').show();
-        $(".form-message").load("contacto.php",{
+        $(".form-message").load("contacto.html",{
             name:$("#inputName").val(),
             email: $("#inputEmail").val(),
             tel: $("#inputTel").val(),
@@ -106,7 +106,7 @@
                 </div>
                 <p class="form-message"></p>
                 <div class="justify-content-center d-flex form-group">
-                  <input class="btn btn-orange my-2 text-white" name="enviar" id="inputSubmit" type="submit">
+                  <button class="btn btn-orange my-2" name="enviar" id="inputSubmit" type="submit">Enviar</button>
                   <div class="loader-wrapper" id="loader-wrapper">
                     <span class="loader" id="loader"><span class="loader-inner"></span></span>
                   </div>
@@ -114,7 +114,6 @@
                 <div class="bg-danger rounded text-white d-none p-3" id="formulario__mensaje">
                   <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
                 </div>
-                <h5 class="bg-succes rounded w-100"><?= $result; ?> </h5>
             </form>
                 <div class="d-flex justify-content-center my-3">
                   <div class="mx-2"><a href="https://wa.me/56990078582?text=Hola,%20me%20gustaría%20cotizar%20un%20trabajo" target="_blank"><i class="img-thumbnail fab fa-whatsapp fa-2x"
